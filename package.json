@@ -1,0 +1,42 @@
+{
+  "name": "parcel-react-example",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel ./src/index.html ",
+    "build": "cross-env NODE_ENV=production parcel build ./src/index.html --public-url ./",
+    "copy-fonts": "cpy node_modules/framework7-icons/fonts/*.* src/fonts && cpy node_modules/material-design-icons/iconfont/*.{eot,ttf,woff,woff2} src/fonts",
+    "postinstall": "npm run copy-fonts"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.2.1",
+    "framework7": "^4.0.0",
+    "framework7-icons": "^2.2.0",
+    "framework7-react": "^4.0.0",
+    "material-design-icons": "^3.0.1",
+    "parcel-bundler": "latest",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-react-app": "^7.0.2",
+    "cpy-cli": "^2.0.0",
+    "cross-env": "^5.1.1",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "sass": "^1.17.2"
+  }
+}
