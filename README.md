@@ -1,3 +1,13 @@
+"workbench.iconTheme": "file-icons",
+  "editor.formatOnPaste": true,
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "none",
+  "prettier.disableLanguages": ["html"],
+  "editor.formatOnSave": true,
+  "editor.rulers": [110],
+  "html.format.wrapAttributes": "force",
+  "html.format.enable": true,
+  "html.format.wrapLineLength": 110
 # React Parcel Example
 
 A minimum viable React app with [Parcel Bundler](https://parceljs.org)
