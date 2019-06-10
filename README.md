@@ -1,13 +1,48 @@
-"workbench.iconTheme": "file-icons",
+{
+  "workbench.iconTheme": "file-icons",
   "editor.formatOnPaste": true,
-  "prettier.singleQuote": false,
   "prettier.trailingComma": "none",
-  "prettier.disableLanguages": ["html"],
   "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.disableLanguages": ["html"],
   "editor.rulers": [110],
   "html.format.wrapAttributes": "force",
   "html.format.enable": true,
-  "html.format.wrapLineLength": 110
+  "html.format.wrapLineLength": 110,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "prettier.eslintIntegration": true,
+  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  }
+}
+
+https://gist.github.com/1natsu172/a65a4b45faed2bd3fa74b24163e4256e
+
+
+
+
 # React Parcel Example
 
 A minimum viable React app with [Parcel Bundler](https://parceljs.org)
